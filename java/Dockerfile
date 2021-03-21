@@ -24,5 +24,7 @@ EXPOSE 8080
 
 USER  wildfly
 
+WORKDIR /opt/app-root/bin
+
 # Run the fat JAR
-CMD   /opt/app-root/bin/run-app.sh
+CMD   ["sh", "run-app.sh"]
